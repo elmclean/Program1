@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.elmclean.program1.MainActivity">
+
+    <item
+        android:id="@+id/action_main"
+        android:orderInCategory="100"
+        android:title="@string/action_main"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_faculty"
+        android:orderInCategory="100"
+        android:title="@string/action_faculty"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_courses"
+        android:orderInCategory="100"
+        android:title="@string/action_courses"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CS/CIS Department</string>
+    <string name="action_main">Main Page</string>
+    <string name="action_faculty">Faculty List</string>
+    <string name="action_courses">Course List</string>
+    <string name="title_activity_faculty">FacultyActivity</string>
+    <string name="title_activity_course_grid">CourseGridActivity</string>
+
+</resources>
