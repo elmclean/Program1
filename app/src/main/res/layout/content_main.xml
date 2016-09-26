@@ -15,5 +15,80 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Page!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CS/CIS Department"
+        android:id="@+id/main_page_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/main_page_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title_description"
+        android:id="@+id/main_title_description"
+        android:layout_below="@+id/space"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/main_title_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Our Mission"
+        android:id="@+id/mission_title"
+        android:layout_below="@+id/space2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/mission_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mission_text"
+        android:id="@+id/mission_description"
+        android:layout_below="@+id/space3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/mission_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space4" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mission_items"
+        android:layout_below="@+id/space4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
 </RelativeLayout>

@@ -1,9 +1,20 @@
 <resources>
-    <string name="app_name">CS/CIS Department</string>
-    <string name="action_main">Main Page</string>
+    <string name="app_name">SVSU Computer Science</string>
+    <string name="action_main">Department Page</string>
     <string name="action_faculty">Faculty List</string>
     <string name="action_courses">Course List</string>
     <string name="title_activity_faculty">FacultyActivity</string>
     <string name="title_activity_course_grid">CourseGridActivity</string>
 
+    <string name="main_title_description">You’ll find SVSU’s Department of Computer Science &amp;
+        Information Systems is staffed by qualified, competent professionals who are committed
+        to teaching and research. We are here to help you grow and succeed in your academic and
+        professional career. Our class sizes are small compared to other institutions and you’ll
+        get to know and work with the CSIS faculty one-on-one. This helps to foster a learning
+        environment aimed at student success.</string>
+    <string name="mission_text">The mission of the Department of Computer Science and
+        Information Systems at SVSU is to provide an outstanding education to its students
+        in accordance with the guidelines of the SVSU mission, to advance scholarship in the
+        key domains of the computing and information systems sciences, and to engage in activities
+        that improve the welfare of society and enhance the reputation of SVSU.</string>
 </resources>
