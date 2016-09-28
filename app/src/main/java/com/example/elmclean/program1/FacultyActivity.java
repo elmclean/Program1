@@ -1,5 +1,6 @@
 package com.example.elmclean.program1;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +10,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class FacultyActivity extends AppCompatActivity {
 
@@ -16,9 +22,68 @@ public class FacultyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faculty);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Spinner spinner = (Spinner) findViewById(R.id.faculty_spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.faculty_array, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
+        {
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int pos, long id) {
+                // An item was selected. You can retrieve the selected item using
+                parent.getItemAtPosition(pos);
+                if(pos == 0) {
+                    ImageView facultyImage = (ImageView) findViewById(R.id.facultyImage);
+                    facultyImage.setImageResource(R.drawable.il_hyung_cho);
+
+                    TextView titleView = (TextView)findViewById(R.id.facultyTitle);
+                    titleView.setText(getString(R.string.cho));
+
+                    TextView bioView = (TextView) findViewById(R.id.facultyBio);
+                    bioView.setText(getString(R.string.cho_bio));
+                } else if(pos == 1) {
+                    ImageView facultyImage = (ImageView) findViewById(R.id.facultyImage);
+                    facultyImage.setImageResource(R.drawable.moe_bidgoli);
+
+                    TextView titleView = (TextView)findViewById(R.id.facultyTitle);
+                    titleView.setText(getString(R.string.bidgoli));
+
+                    TextView bioView = (TextView) findViewById(R.id.facultyBio);
+                    bioView.setText(getString(R.string.bidgoli_bio));
+                } else if(pos == 2){
+                    ImageView facultyImage = (ImageView) findViewById(R.id.facultyImage);
+                    facultyImage.setImageResource(R.drawable.george_corser);
+
+                    TextView titleView = (TextView)findViewById(R.id.facultyTitle);
+                    titleView.setText(getString(R.string.corser));
+
+                    TextView bioView = (TextView) findViewById(R.id.facultyBio);
+                    bioView.setText(getString(R.string.corser_bio));
+                } else {
+                    ImageView facultyImage = (ImageView) findViewById(R.id.facultyImage);
+                    facultyImage.setImageResource(R.drawable.poonam_dharam);
+
+                    TextView titleView = (TextView)findViewById(R.id.facultyTitle);
+                    titleView.setText(getString(R.string.dharam));
+
+                    TextView bioView = (TextView) findViewById(R.id.facultyBio);
+                    bioView.setText(getString(R.string.dharam_bio));
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Another interface callback
+            }
+
+        });
     }
 
     @Override
@@ -63,5 +128,5 @@ public class FacultyActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CourseGridActivity.class);
         startActivity(intent);
     }
-
 }
+

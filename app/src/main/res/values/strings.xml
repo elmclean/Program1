@@ -17,4 +17,37 @@
         in accordance with the guidelines of the SVSU mission, to advance scholarship in the
         key domains of the computing and information systems sciences, and to engage in activities
         that improve the welfare of society and enhance the reputation of SVSU.</string>
+
+    <string-array name="faculty_array">
+        <item>Il-Hyung Cho</item>
+        <item>Moe Bidgoli</item>
+        <item>George Corser</item>
+        <item>Poonam Dharam</item>
+    </string-array>
+    <string name="cho">Il-Hyung Cho\nAssociate Professor of Computer Science &amp; Information Systems\nDepartment of Computer Science and Information Systems</string>
+    <string name="cho_bio">Il-Hyung Cho is an associate professor and chair of the Department of Computer
+        Science at Saginaw Valley State University, Michigan, where he has been since 2003. During
+        2010-2011 he was a Visiting Professor of Bioinformatics lab at Washington State University. He
+        received a B.E. in Electronic &amp; Computer Engineering from Yonsei University in 1987, and an M.S.
+        in Computer Science from Bowling Green State University. He received his Ph.D. in Computer Science
+        from Clemson University in 2000. He worked at Iona Technologies in Boston as a software engineer in
+        2000-2001, and at Clemson University as visiting lecturer in 2001-2003. </string>
+
+    <string name="bidgoli">Moe Bidgoli\nAssociate Professor of Computer Science &amp; Information Systems\nDepartment of Computer Science and Information Systems</string>
+    <string name="bidgoli_bio">Education:"\nMaster of Science, Univ Nebraska-Lincoln</string>
+
+    <string name="corser">George Corser\nAssistant Professor of Computer Science &amp; Information Systems\nDepartment of Computer Science and Information Systems</string>
+    <string name="corser_bio">Corser is a leader and advisor in a range of professional service activities.
+        He is Organizer of TEDxSVSU and the faculty advisor of the student organization which coordinates
+        TED Talks on SVSU campus. He is the Secretary of the Board of Directors of Early Career Academy, a
+        Michigan charter public high school. He is a member of the ACM, SAE, IEEE Vehicular Technology Society,
+        and the Michigan Infragard, a cyber security partnership between the FBI and the private sector, serving
+        as a resource on the topic of digital security in the transportation sector. Corser is very active in
+        promoting computer science education throughout SVSU and its surrounding community, leading the Hour of
+        Code, serving as a Dow Corning faculty mentor and an AH Nickless mentor, and helping campus organizations
+        develop web sites and mobile apps.</string>
+
+    <string name="dharam">Poonam Dharam\nAssistant Professor of Computer Science &amp; Information Systems\nDepartment of Computer Science and Information Systems</string>
+    <string name="dharam_bio">Education:\nDoctor of Philosophy, Universirty Memphis</string>
+
 </resources>
